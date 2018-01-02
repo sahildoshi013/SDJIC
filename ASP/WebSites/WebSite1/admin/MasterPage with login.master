@@ -1,0 +1,15 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage2.master" AutoEventWireup="false" CodeFile="MasterPage with login.master.vb" Inherits="MasterPage_with_login" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="nav" Runat="Server">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">STAFF LOGIN</a></li>
+                    <li><a href="index.html">STUDENT LOGIN</a></li>
+				</ul>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</asp:Content>
+

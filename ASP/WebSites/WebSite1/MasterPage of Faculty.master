@@ -1,0 +1,70 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage of Faculty.master.vb" Inherits="MasterPage_of_Faculty" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--SLIDER CSS CLASES -->
+    <link href="assets/Slides-SlidesJS-3/examples/playing/css/slider.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style type="text/css">
+td 
+{
+    text-align: right;
+}
+th 
+{
+    text-align: right;
+}
+</style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+			<div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="SDJ image\Logo.png" height="70"/></a>
+            </div>
+            <div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+                    <li><a href="Home.aspx">LogOut</a></li>
+                </ul>
+				<br><br><br><br>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="faculty home.aspx">HOME</a></li>
+                    <li><a href="">OLD PAPERS</a></li>
+                    <li><a href="">NEW PAPER</a></li>
+                    <li><a href="">RESULT</a></li>
+                    <li><a href="">DETAILS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--END NAV SECTION -->
+     <div class="space-bottom"></div>
+    <div>
+    <center>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </center>
+    </div>   
+    </form>
+</body>
+</html>
